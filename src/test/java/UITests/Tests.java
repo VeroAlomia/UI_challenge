@@ -70,6 +70,7 @@ public class Tests extends TestHooks {
                 .acceptCookies()
                 .goToSearchMovieGenre();
     }
+
 }
 
 
