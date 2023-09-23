@@ -71,3 +71,5 @@ public class Tests extends TestHooks {
                 .goToSearchMovieGenre();
     }
 }
+
+
