@@ -1,9 +1,6 @@
 package UITests;
 
-import Scenarios.LoginPage;
-import Scenarios.MovieGenrePage;
-import Scenarios.SearchMoviePage;
-import Scenarios.SortPage;
+import Scenarios.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +10,7 @@ public class Tests extends TestHooks {
     @Test
     public void loginSuccessfull(){
         //System.out.println(driver);
+
         LoginPage loginPage = new LoginPage(driver);
 
         loginPage.goToLogin()
@@ -42,7 +40,7 @@ public class Tests extends TestHooks {
     }
 
     @Test
-    public void Order (){
+    public void verifySortingByAscendingOrder (){
         SortPage viewAscendingOrder = new SortPage(driver);
         viewAscendingOrder.goToMovieGenreList()
                 .goToTopRated()
@@ -63,7 +61,7 @@ public class Tests extends TestHooks {
                   );
     }
     @Test
-    public void Genre () {
+    public void verifyMovieGenre () {
         MovieGenrePage movieGenre = new MovieGenrePage(driver);
         movieGenre.goToMovieGenreList()
                 .goToTopRated()
@@ -71,6 +69,10 @@ public class Tests extends TestHooks {
                 .goToSearchMovieGenre();
     }
 
+    @Test
+    public void validateActingTimeline () {
+        ActorPage actimeline = new ActorPage(driver);
+    }
 }
 
 
