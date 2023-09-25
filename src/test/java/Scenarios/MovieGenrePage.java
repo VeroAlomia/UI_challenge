@@ -27,14 +27,12 @@ public class MovieGenrePage extends BasePage{
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("window.scrollBy(0,100)");
         this.driver.findElement(this.genresSpanBy).click();
-        return this.goToSearchMovieGenre();
+        return this;
     }
 
     public MovieGenrePage acceptCookies() {
         this.driver.findElement(this.acceptCookiesBtn).click();
         return this;
     }
-
-
 }
 

@@ -125,6 +125,7 @@ public class Tests extends TestHooks {
     public void validateActingTimeline () {
         // Create an ActorPage object
         ActorPage actimeline = new ActorPage(driver);
+
         // Add a log at the start of the test
         logger.info("Starting acting timeline validation test.");
     }
